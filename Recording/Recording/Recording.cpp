@@ -1,13 +1,13 @@
 // Recording.cpp : Defines the entry point for the application.
 //
 
-#include "stdafx.h"
+
 #include"stdafx.h"
 #include"resource..h"
-#include<vector>
+#include <vector>
 #include <fstream> 
 #include <cstdlib>                /*  Includes the Standard C library header <stdlib.h> and adds the associated names to the std namespace.                       */
-#include<iostream>	     
+#include <iostream>	     
 #include <CommDlg.h>              /*  Common Dialog Boxes.                                                                                                        */
 #include <MMSystem.h>             /*  Many functions working with voice are in mmSystem.dll, which is in Windows\System\ directory and it's in MMSystem.h header. */
 #pragma comment(lib, "winmm.lib") /*  Tells the linker to add the 'winmm.lib' library.*/
@@ -51,8 +51,8 @@ int WINAPI WinMain(
 	win_class.cbWndExtra    = 0;                                        /*  Structure or the window instance .                  */
 	win_class.lpfnWndProc   = WindowProcedure;                          /*  This function is called by windows(A pointer to the window procedure).         */
 	win_class.lpszMenuName  = NULL;                                     /*  The resource name of the class menu, as the name appears in the resource file. */
-	win_class.lpszClassName = app_name;                                 /*  String, that specifies the window class name.       */
-	win_class.hbrBackground = (HBRUSH)(COLOR_BACKGROUND + 2);           /*  Use Windows's default colour as the background of the window.                  */
+	win_class.lpszClassName = app_name                       ;           /*  String, that specifies the window class name.       */
+	win_class.hbrBackground = (HBRUSH)(COLOR_BACKGROUND + 2) ;           /*  Use Windows's default colour as the background of the window.                  */
 
 	if (!RegisterClassEx(&win_class))
 	{
