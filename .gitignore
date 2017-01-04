@@ -27,3 +27,5 @@
 *.exe
 *.out
 *.app
+/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.vcxproj
+/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.cpp
